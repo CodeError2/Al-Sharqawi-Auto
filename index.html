@@ -1,36 +1,36 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>THE ONE MOTORS</title>
+  <title>Al-Sharqawi-Auto</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Rajdhani:wght@300;400;500;600&family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.css">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- LOADER -->
-  <div id="loader"><div class="loader-logo">THE ONE</div></div>
+  <div id="loader"><div class="loader-logo">Al-Sharqawi</div></div>
 
-  <!-- NAVBAR -->
   <nav id="navbar">
-    <a href="#" class="nav-logo" id="logo-trigger">THE <span>ONE</span></a>
+    <a href="#" class="nav-logo" id="logo-trigger">Al <span>Sharqawi</span></a>
     <ul class="nav-links">
-      <li><a href="#cars">السيارات</a></li>
+      <li><a href="#cars" id="admin-trigger-link">السيارات</a></li>
       <li><a href="#about">عنّا</a></li>
       <li><a href="#contact">تواصل معنا</a></li>
     </ul>
-    <a href="tel:+971527220717" class="nav-phone">+971 527 220 717</a>
+    <a href="tel:+971527220717" class="nav-phone">01275482101</a>
   </nav>
 
-  <!-- HERO -->
   <section class="hero" id="home">
     <div class="hero-bg"></div>
     <div class="hero-grid"></div>
     <div class="hero-line"></div>
     <div class="hero-content">
-      <p class="hero-tagline">THE ONE MOTORS — Dubai, UAE</p>
+      <p class="hero-tagline">Al-Sharqawi-Auto</p>
       <h1 class="hero-title">فخامة<br>بلا حدود</h1>
       <p class="hero-sub">مجموعة مختارة من أفخم السيارات في العالم</p>
       <div class="hero-btns">
@@ -41,7 +41,6 @@
     <div class="hero-scroll"><div class="scroll-line"></div><span>Scroll</span></div>
   </section>
 
-  <!-- STATS -->
   <section class="stats">
     <div class="stats-grid">
       <div class="stat-item"><div class="stat-num" id="stat-cars">0</div><div class="stat-label">سيارة متاحة</div></div>
@@ -51,7 +50,6 @@
     </div>
   </section>
 
-  <!-- CARS -->
   <section id="cars">
     <div class="section-header">
       <p class="section-label">مجموعتنا الحصرية</p>
@@ -66,7 +64,6 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
   <section id="about" class="about-section">
     <div class="section-header" style="margin-bottom:2rem;">
       <p class="section-label">من نحن</p>
@@ -74,13 +71,12 @@
       <div class="gold-line"></div>
     </div>
     <p class="about-text">
-      THE ONE MOTORS وجهتك الأولى لاقتناء أرقى السيارات الفاخرة في الإمارات العربية المتحدة.
+      Al-Sharqawi-Auto وجهتك الأولى لاقتناء أرقى السيارات الفاخرة .
       نقدم لك تجربة شراء استثنائية مع ضمان الجودة والأصالة في كل سيارة.
       فريقنا المتخصص جاهز لمساعدتك في اختيار السيارة المثالية التي تناسب ذوقك ومتطلباتك.
     </p>
   </section>
 
-  <!-- CONTACT -->
   <section id="contact">
     <div class="section-header">
       <p class="section-label">نحن هنا</p>
@@ -90,13 +86,13 @@
     <div class="contact-grid">
       <div class="contact-info">
         <h3>يسعدنا خدمتك</h3>
-        <div class="contact-detail"><div class="contact-icon">📞</div><div><div class="contact-phone">+971 527 220 717</div><div class="contact-text">متاحون 7 أيام في الأسبوع</div></div></div>
-        <div class="contact-detail"><div class="contact-icon">📍</div><div class="contact-text">دبي، الإمارات العربية المتحدة</div></div>
+        <div class="contact-detail"><div class="contact-icon">📞</div><div><div class="contact-phone">01275482101</div><div class="contact-text">متاحون 7 أيام في الأسبوع</div></div></div>
+
         <div class="contact-detail"><div class="contact-icon">🕐</div><div class="contact-text">من 9 صباحاً حتى 9 مساءً يومياً</div></div>
       </div>
       <div>
         <form class="contact-form" id="contact-form">
-          <input class="form-input" type="text" placeholder="الاسم الكريم" required>
+          <input class="form-input" type="text" placeholder="الاسم" required>
           <input class="form-input" type="tel" placeholder="رقم الجوال">
           <textarea class="form-input" placeholder="رسالتك..."></textarea>
           <button type="submit" class="btn-primary" style="border:none;cursor:pointer;width:100%;">إرسال الرسالة</button>
@@ -105,13 +101,10 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    <div class="footer-logo">THE ONE MOTORS</div>
-    <div class="footer-copy">© 2025 The One Motors. All rights reserved. Dubai, UAE</div>
+    <div class="footer-logo">Al-Sharqawi-Auto</div>
   </footer>
 
-  <!-- CAR MODAL -->
   <div class="modal-overlay" id="car-modal">
     <div class="modal">
       <button class="modal-close" id="modal-close-btn">✕</button>
@@ -124,7 +117,7 @@
           </div>
           <div style="text-align:left;">
             <div class="modal-price" id="modal-price"></div>
-            <div class="modal-price-sub">AED</div>
+            <div class="modal-price-sub">EGP</div>
           </div>
         </div>
         <div class="modal-specs-grid" id="modal-specs"></div>
@@ -136,10 +129,7 @@
     </div>
   </div>
 
-  <!-- ADMIN OVERLAY -->
   <div id="admin-overlay">
-
-    <!-- Login -->
     <div id="admin-login">
       <h2>⚙ لوحة التحكم</h2>
       <p>هذه الصفحة خاصة بالمشرف فقط</p>
@@ -149,26 +139,24 @@
       <button id="admin-cancel-btn" class="admin-cancel-link">إلغاء</button>
     </div>
 
-    <!-- Panel -->
     <div id="admin-panel">
       <div class="admin-header">
-        <h2>⚙ لوحة الإدارة — THE ONE MOTORS</h2>
+        <h2>⚙ لوحة الإدارة — Al-Sharqawi-Auto</h2>
         <div style="display:flex;gap:0.8rem;align-items:center;">
-          <div id="fb-status" title="حالة Firebase"></div>
+          <div id="fb-status" title="حالة Database"></div>
           <button class="admin-close-btn" id="admin-close-btn">إغلاق ✕</button>
+          <button onclick="logoutAdmin()" class="admin-cancel-edit-btn" style="color: #c0392b; border-color: #c0392b;">تسجيل خروج 🔒</button>
         </div>
       </div>
       <div class="admin-body">
 
-        <!-- Car list -->
         <div class="admin-section">
           <div class="admin-section-title">السيارات الحالية</div>
           <div class="admin-cars-list" id="admin-cars-list">
-            <div style="color:var(--text-light);">جاري التحميل من Firebase...</div>
+            <div style="color:var(--text-light);">جاري التحميل...</div>
           </div>
         </div>
 
-        <!-- Add/Edit form -->
         <div class="admin-section">
           <div class="admin-section-title" id="form-section-title">إضافة سيارة جديدة</div>
           <div class="admin-add-form">
@@ -184,7 +172,7 @@
                 <input class="admin-input" id="f-name" type="text" placeholder="Mercedes-Benz C63 S">
               </div>
               <div>
-                <label class="admin-label">السعر (AED)</label>
+                <label class="admin-label">السعر (EGP)</label>
                 <input class="admin-input" id="f-price" type="number" placeholder="389000">
               </div>
               <div>
@@ -193,43 +181,31 @@
               </div>
             </div>
 
-            <!-- IMAGE UPLOAD -->
             <div class="admin-form-full">
-              <label class="admin-label">📷 صورة السيارة — من جهازك مباشرة</label>
-              <input type="file" id="f-img-file" accept="image/jpeg,image/png,image/webp" style="display:none;">
+              <label class="admin-label">📷 صورة السيارة</label>
+              <input type="file" id="f-img-file" accept="image/*" multiple hidden>
               <input type="hidden" id="f-img-url" value="">
 
               <div class="upload-area" id="upload-area">
-                <!-- Placeholder (shown when no image) -->
                 <div class="upload-placeholder" id="upload-placeholder">
                   <div class="upload-icon">🖼️</div>
                   <div class="upload-text">اضغط هنا لاختيار صورة من جهازك</div>
-                  <div class="upload-hint">JPG · PNG · WEBP &nbsp;|&nbsp; الحد الأقصى 5MB</div>
+                  <div class="upload-hint">JPG · PNG · WEBP &nbsp;|&nbsp; الحد الأقصى 10MB</div>
                 </div>
-                <!-- Preview (shown after selecting) -->
-                <div class="upload-preview" id="upload-preview" style="display:none;">
-                  <img id="preview-img" src="" alt="معاينة الصورة">
-                  <div class="upload-preview-actions">
-                    <button type="button" class="change-img-btn" id="change-img-btn">🔄 تغيير الصورة</button>
-                    <button type="button" class="remove-img-btn" id="remove-img-btn">✕ إزالة</button>
-                  </div>
-                </div>
-                <!-- Upload progress -->
+                <div class="upload-preview" id="upload-preview" style="display:none;"></div>
                 <div class="upload-progress-wrap" id="upload-progress-wrap" style="display:none;">
                   <div class="upload-progress-bar"><div class="upload-progress-fill" id="upload-progress-fill"></div></div>
-                  <div class="upload-progress-text" id="upload-progress-text">جاري الرفع على Firebase... 0%</div>
+                  <div class="upload-progress-text" id="upload-progress-text">جاري الرفع... 0%</div>
                 </div>
               </div>
             </div>
 
-            <!-- DYNAMIC SPECS -->
             <div class="admin-section-title" style="margin-top:1.5rem;">المواصفات — أضف ما تشاء</div>
             <div id="specs-container"></div>
             <button class="add-spec-btn" id="add-spec-btn">+ إضافة مواصفة جديدة</button>
 
-            <!-- Actions -->
             <div style="display:flex;gap:1rem;align-items:center;flex-wrap:wrap;margin-top:1.5rem;">
-              <button class="admin-submit" id="save-car-btn">💾 حفظ السيارة على Firebase</button>
+              <button class="admin-submit" id="save-car-btn">💾 حفظ السيارة</button>
               <button id="cancel-edit-btn" class="admin-cancel-edit-btn" style="display:none;">إلغاء التعديل</button>
             </div>
             <div class="admin-msg" id="save-msg"></div>
@@ -240,12 +216,9 @@
     </div>
   </div>
 
-  <!-- Firebase SDK (no bundler needed) -->
-  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js"></script>
+  
   <script src="app.js"></script>
 </body>
 </html>
